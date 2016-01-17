@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by kozh on 17/01/16.
  */
-@WebServlet("/")
+@WebServlet(value = {"/index", "/"})
 public class Accueil extends HttpServlet {
 
     @Override
