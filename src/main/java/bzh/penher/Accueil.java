@@ -15,6 +15,7 @@ public class Accueil extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         req.setAttribute("prenom", "toto");
         req.getRequestDispatcher("/aloha.jsp").forward(req, resp);
     }
